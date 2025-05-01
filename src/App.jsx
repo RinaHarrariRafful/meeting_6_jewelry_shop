@@ -97,15 +97,6 @@ function App() {
         <img src={`./image/${p.img}`} alt="product image" />
         )}
 
-{/* {p.img === "" ? (
-  <img src={`./image/${p.img}`} alt="product image" />
-) : (
-  <img src="./image/gold.png" alt="default" />
-)} */}
-
-
-        {/* {p.img==""? <img src="./image/gold.png"/>:
-        <img src={"./image/"+p.img} alt="product image"/>} */}
         <button type="button" onClick={()=>{AddCart(p)}}>הוסף לסל</button>
         {user=="manager"&&
         <button type="button" onClick={()=>{deleteP(p.id)}}>הסר </button>}
